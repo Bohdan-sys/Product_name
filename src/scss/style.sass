@@ -1,29 +1,31 @@
 @import "nullstyle.scss", "inputs.sass", "buttons.sass", "section.sass", "columns.sass", "container.sass", "flex.sass", "caption.sass"
 
 
+$space-1: 4px
+$space-2: 10px
+$space-3: 16px
+$space-4: 20px
+$space-5: 28px
+$space-6: 44px
 
     
 body 
     font-family: 'Arial'
 
-
-
 .item
     &--
         &space_l
-            padding-bottom: 28px
+            padding-bottom: $space-5
         &space_m
-            padding-bottom: 16px
+            padding-bottom: $space-3
         &space_left
-            padding-left: 44px
+            padding-left: $space-6
 
 
 .icon
     &--
         &white
             color: white
-        &space
-            padding-right: 10px
         &size_l
             font-size: 32px
 
@@ -55,7 +57,7 @@ body
                     color: white                
     &--
         &space
-            margin: 20px 0 20px 28px   
+            margin: $space-4 0 $space-4 $space-5   
 
 
 
@@ -63,12 +65,12 @@ body
 .card
     &--
         &space_m
-            padding-bottom: 20px
+            padding-bottom: $space-4
         &space_l
             padding-bottom: 36px 
         &space_xl
-            padding: 16px 4px
-            margin: 4px  0    
+            padding: $space-3 $space-1
+            margin: $space-1  0    
         &bg_grey
             background-color: #445161
         &border_radius
@@ -83,7 +85,7 @@ body
                 &bg_white
                     background-color: white  
                 &space_m
-                    padding: 16px
+                    padding: $space-3
                 &border_radius
                     border-radius: 8px    
                 &decorated
