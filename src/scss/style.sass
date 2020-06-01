@@ -1,0 +1,116 @@
+@import "nullstyle.scss", "inputs.sass", "buttons.sass", "section.sass", "columns.sass", "container.sass", "flex.sass", "caption.sass"
+
+
+
+    
+body 
+    font-family: 'Arial'
+
+
+
+.item
+    &--
+        &space_l
+            padding-bottom: 28px
+        &space_m
+            padding-bottom: 16px
+        &space_left
+            padding-left: 44px
+
+
+.icon
+    &--
+        &white
+            color: white
+        &space
+            padding-right: 10px
+        &size_l
+            font-size: 32px
+
+                
+.list 
+    &__
+        &plus
+            &--
+                &decorated
+                    position: relative
+                    &::before
+                        content: ''
+                        position: absolute
+                        top: 6px
+                        left: 0
+                        background: #445161
+                        width: 32px
+                        height: 32px
+                    &::after 
+                        content: '+'
+                        position: absolute
+                        top: 0
+                        left: 3px
+                        color: #fff
+                        font-size: 44px
+        &item
+            &--
+                &decoration
+                    color: white                
+    &--
+        &space
+            margin: 20px 0 20px 28px   
+
+
+
+
+.card
+    &--
+        &space_m
+            padding-bottom: 20px
+        &space_l
+            padding-bottom: 36px 
+        &space_xl
+            padding: 16px 4px
+            margin: 4px  0    
+        &bg_grey
+            background-color: #445161
+        &border_radius
+            border-radius: 8px
+    &__
+        &pannel
+            position: relative
+                        
+            &--
+                &bg_light_grey
+                    background-color: #ebebeb
+                &bg_white
+                    background-color: white  
+                &space_m
+                    padding: 16px
+                &border_radius
+                    border-radius: 8px    
+                &decorated
+                    &::before
+                        content: ''
+                        position: absolute
+                        top: 24px
+                        left: -12px
+                        width: 0
+                        height: 0
+                        border-top: 20px solid transparent
+                        border-right: 20px solid #ebebeb
+                        border-bottom: 20px solid transparent
+    
+    .wrapper
+        &__
+            &social_media
+                &--
+                    &decoration
+                        width: 24px
+                        height: 24px    
+            &avatar
+                &--
+                    &decoration_rounded
+                        margin: 0 auto;
+                        overflow: hidden;
+                        border-radius: 50%;
+
+
+

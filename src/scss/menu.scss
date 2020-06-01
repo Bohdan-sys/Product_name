@@ -1,0 +1,194 @@
+//@import "burger.scss";
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 80px;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    //@include menu;
+
+
+    &--submenu {
+        display: none;
+        background: linear-gradient(to right, rgb(75, 124, 82), rgb(122, 163, 118));
+        left: 0;
+        width: 200px;
+        top: 100%;
+
+        &.is-active {
+            display: block;
+            position: absolute; // delete when burger 
+
+        }
+    }
+
+
+
+    &__item {
+        padding: 12px;
+        position: relative;
+
+        &:hover {
+            background: rgb(103, 143, 91);
+        }
+    }
+
+    @media (min-width: 768px) {
+        &--appearance-md {
+            display: flex;
+            justify-content: space-between;
+            height: inherit;
+            background: inherit;
+            opacity: 1;
+            position: static;
+            transform: inherit;
+
+        }
+
+        &--submenu-md {
+            display: none;
+            left: 0;
+            width: 200px;
+            top: 100%;
+
+            &.is-active {
+                display: block;
+                position: absolute;
+
+            }
+        }
+    }
+}
+
+
+
+
+
+/*.menu {
+    &.is-passive {
+        display: none;
+    }
+}
+.menu {
+    transition: 0.5s;
+    transform: translateX(-100%);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    background: linear-gradient(to right, rgb(75, 124, 82), rgb(122, 163, 118));
+    z-index: 1;
+
+    &.active {
+        transform: translateX(0%);
+        opacity: 1;
+        padding: 52px 6px;
+    }
+
+    &__pannel {
+        &--hidden {
+            display: none;
+
+            &.active {
+                display: block;
+                top: 0;
+                padding: 10px 10px;
+                left: 0;
+                background-color: rgb(58, 92, 58);
+                z-index: 3;
+            }
+        }
+    }
+
+    &__item {
+        padding: 10px;
+
+        &:hover {
+
+            padding: 20px;
+            margin: -10px;
+            background: #d47575;
+            transition: 1s;
+        }
+    }
+
+    &__link {
+        color: beige;
+    }
+
+
+
+
+    @media (min-width: 768px) {
+
+        &-md {
+            transform: none;
+            left: 0;
+            top: 0;
+            width: 100%;
+            margin: 0 auto;
+            height: inherit;
+            background: inherit;
+            opacity: 1;
+            position: relative;
+        }
+
+        &__pannel-md {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__item--dropdown-md {
+            position: relative;
+
+            >.menu__link {
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 8px;
+                    height: 2px;
+                    background: wheat;
+                    transform: rotate(45deg);
+                    top: 20px;
+                    left: 20px;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 8px;
+                    height: 2px;
+                    background: wheat;
+                    transform: rotate(-45deg);
+                    top: 20px;
+                    left: 24px;
+                }
+            }
+
+            .menu__pannel--hidden-md {
+                position: absolute;
+                top: 50px;
+                padding: 10px 10px;
+                left: 0;
+                background-color: rgb(58, 92, 58);
+
+            }
+
+
+        }
+    }
+*/

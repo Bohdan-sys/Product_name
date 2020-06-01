@@ -1,0 +1,55 @@
+/*forms validate*/
+
+
+
+
+.form-feedback 
+    input, textarea
+        font-size: 16px
+        background: #fff
+        border: 1px solid #fff
+        border-radius: 4px
+        outline: none
+        padding: 16px 12px
+        width: 100%
+        resize: none
+
+
+@keyframes fadeOut 
+    from 
+        opacity: 1
+    
+
+    to 
+        opacity: 0
+    
+
+.just-validate-tooltip-container 
+    position: relative
+
+
+.just-validate-tooltip-hide 
+    animation: fadeOut .5s linear
+    opacity: 0
+
+
+.js-validate-error-label 
+    position: absolute
+    bottom: -20px
+    left: 0
+    z-index: 10
+    background: black
+    border-radius: 4px
+    padding: 4px 8px
+    font-size: 16px
+    pointer-events: none
+    transition: all .4s linear
+
+
+.js-validate-error-field 
+    border-radius: 4px
+
+
+
+                        
+                           
